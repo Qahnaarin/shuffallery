@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_blue_500"
+    android:orientation="vertical"
+    tools:context=".activity.SingUpActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="15dp"
+            android:src="@drawable/close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/reset_password_padding"
+            android:paddingEnd="@dimen/reset_password_padding">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:text="@string/welcome"
+                android:textColor="@color/white"
+                android:textSize="@dimen/reset_password_title_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:text="@string/join_the_shuffallery"
+                android:textColor="@color/md_grey_200"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/editTextUserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/user_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/edittext_inside_padding"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/md_grey_300"
+                android:textCursorDrawable="@color/white" />
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/edittext_inside_padding"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/md_grey_300"
+                android:textCursorDrawable="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextConfirmEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/confirm_email_address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/edittext_inside_padding"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/md_grey_300"
+                android:textCursorDrawable="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/edittext_inside_padding"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/md_grey_300"
+                android:textCursorDrawable="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/edittext_inside_padding"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/md_grey_300"
+                android:textCursorDrawable="@color/white" />
+
+
+            <Button
+                android:id="@+id/buttonCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/singup_button"
+                android:text="@string/create_account"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewPermission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:text="@string/please_allow_permissions"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</LinearLayout>

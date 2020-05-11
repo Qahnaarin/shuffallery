@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:scaleType="centerCrop" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutStatus"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/layout_background">
+
+            <ImageButton
+                android:id="@+id/imageButtonMenu"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/gear" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/actionBarSize"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                >
+
+                <ImageView
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:padding="8dp"
+                    android:id="@+id/imageViewAdd"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:background="@color/colorTransparent"
+                    android:src="@drawable/advertisement" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutCoin"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_alignParentEnd="true"
+                    android:padding="8dp">
+
+
+                    <ImageView
+                        android:id="@+id/coins"
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:padding="6dp"
+                        android:src="@drawable/coins" />
+
+                    <TextView
+                        android:id="@+id/textViewCoin"
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:gravity="center"
+                        android:text="32"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonShuffale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="#A0000000"
+            android:gravity="center"
+            android:text="@string/shuffle"
+            android:textColor="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/buttonShuffale"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieLike"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="like.json" />
+
+                <TextView
+                    android:id="@+id/textViewLikeWallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="1234533"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:autoSizeMaxTextSize="22sp"
+                    app:autoSizeMinTextSize="16sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:adjustViewBounds="true"
+                    android:padding="15dp"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="used.json" />
+
+                <TextView
+                    android:id="@+id/textViewUsedWallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="12345"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:autoSizeMaxTextSize="22sp"
+                    app:autoSizeMinTextSize="16sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieDislike"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="dislike.json" />
+
+                <TextView
+                    android:id="@+id/textViewDislikeWallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="12345"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:autoSizeMaxTextSize="22sp"
+                    app:autoSizeMinTextSize="16sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewPermission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:text="@string/please_allow_permissions"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</RelativeLayout>

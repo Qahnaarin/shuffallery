@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="reset_password_title_text_size">50sp</dimen>
+    <dimen name="edittext_inside_padding">10dp</dimen>
+    <dimen name="reset_password_padding">30dp</dimen>
+</resources>
